@@ -1,0 +1,163 @@
+/*========== Google Fonts =========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quando&family=Quantico:wght@700&display=swap');
+
+/*========== Variables =========*/
+:root{
+    /*========== Fuentes =========*/
+    --Titulo-secciones:'Quantico', sans-serif;
+    --Titulo-parrafos:'Quando', serif;
+    --Parrafos:'Poppins', sans-serif;
+
+    /*========== Colores =========*/
+    --Color-Primario:hsl(252, 54%, 58%);
+    --Color-Secundario:hsl( var(--Color), 30%, 58%);
+    --Color-Parrafos:hsl(0, 0%, 100%);
+    --Color-Oscuro:#242424;
+}
+
+/*========== Globales =========*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Titulo-secciones);
+    scroll-behavior: smooth;
+}
+
+.linea{
+    color: #ffff;
+    margin: 5rem auto;
+    width: 80%;
+    padding: 5px 0;
+}
+
+.titulo-seccion{
+    font-family: var(--Titulo-secciones);
+    color: var(--Color-Primario);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.titulo-articulo{
+    font-family: var(--Titulo-parrafos);
+    color: var(--Color-Parrafos);
+    font-size: 50px;
+}
+
+.descripcion-articulo{
+    font-family: var(--Parrafos);
+    color: var(--Color-Parrafos);
+    font-size: 25px;
+}
+
+.parrafo{
+    color: var(--Color-Parrafos);
+    font-family: var(--Parrafos);
+    font-size: 15px;
+}
+
+@media (max-width: 600px)  {
+    .titulo-seccion{
+        font-size: 50px;
+    }
+    
+    .titulo-articulo{
+        font-size: 40px;
+    }
+    
+    .descripcion-articulo{
+        font-size: 25px;
+    }
+    
+    .parrafo{
+        font-size: 10px;
+    }
+}
+
+.primario {
+    color: var(--Color-Primario);
+}
+
+/*========== Navegacion =========*/
+
+.navbar-logo{
+    font-size: 100px;
+}
+
+/*========== Header =========*/
+
+.header{
+    background-color: var(--Color-Oscuro);
+    background-image: url("./img/Header/Fondo1-.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.header-contenedor{
+    width: 300px;
+    height: 150px;
+    margin: 200px 0 0 50px;
+}
+
+.header__titulo {
+    font-size: 1.5rem;
+    font-family: var(--Parrafos);
+    color: var(--Color-Parrafos);
+}
+.header__descripcion {
+    font-size: 1rem;
+    font-family: var(--Parrafos);
+    color: var(--Color-Parrafos);
+}
+
+/*========== Main =========*/
+
+.main{
+    background-color: var(--Color-Oscuro);
+    background-image: url(./img/Main/Fondo2-.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.apolo-11 {
+    background-image: url(./img/apolo-11/Fondo-.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+}
+
+
+/*========== Footer =========*/
+
+.footer{
+    background-color: var(--Color-Oscuro);
+}
+
+.card-title{
+    font-size: 2rem;
+    font-family: var(--Titulo-secciones);
+    color: hsl(0, 0%, 100%);
+}
+
+.card-text{
+    font-size: 1.5rem;
+    font-family: var(--Parrafos);
+    color: hsl(0, 0%, 84%);
+}
+
+.btn-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
